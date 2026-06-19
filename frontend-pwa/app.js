@@ -42,7 +42,7 @@ async function buyDrink(rowCommand, drinkName) {
     try {
         // បាញ់ Request ទៅកាន់ Backend របស់អ្នក
         // [ចំណាំសំខាន់]: ពេលអ្នកបង្ហោះគម្រោងនេះឡើងអ៊ីនធឺណិតពិតប្រាកដ សូមកុំភ្លេចប្ដូរ 'http://localhost:3000' ទៅជា Link Server ពិតប្រាកដរបស់អ្នក
-        const response = await fetch('http://localhost:3000/api/payment-webhook', {
+        const response = await fetch('https://vending-machine-rwab.onrender.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
